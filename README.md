@@ -1,40 +1,57 @@
 # lushan-export-to-csv
 
-You can export records stored in the Mongo DB, to a CSV file. 
+You can export records stored in the Mongo DB, to a CSV file.
 
 ### Installation
 
-`npm i lushan-export-to-csv`
+```js
+
+npm i lushan-export-to-csv
+
+```
 
 ### Usage
 
-`const csv = require(‘lushan-export-to-csv’);`
+```js
+
+const csv = require(‘lushan-export-to-csv’);
+
+```
 
 ### Methods:
 
-exportCsv() 
+```js
+
+exportCsv()
+
+```
 
 ### Definition and usage:
 
+_Allows you to generate a csv batch. This method returns the download link of the generated file_
 
-### Syntax 
+### Syntax
 
-`csv.exportCsv(EntityName, Headers, Cursor, BaseUrl, DestinationFolder)`
+```js
 
+csv.exportCsv(EntityName, Headers, Cursor, BaseUrl, DestinationFolder)
+
+```
 
 ### Parameters values
 
-- EntityName : Required. Name of the entity you want to export. This will be used to generate the file name. For example citizens, companies, etc. (Type: String)
+- **EntityName** : Required. Name of the entity you want to export. This will be used to generate the file name. For example citizens, companies, etc. (Type: String)
 
-- Headers : will be used as a column heading. (Type: Array)
+- **Headers** : Required. Will be used as a column heading. (Type: Array)
 
-- Cursor : Required. A pointer to the result set of a query. Will be used to generate the batch. More information about cursors in MongoDB:: https://docs.mongodb.com/manual/reference/glossary/#term-cursor
+- **Cursor** : Required. A pointer to the result set of a query. Will be used to generate the batch. More information about cursors in MongoDB: https://docs.mongodb.com/manual/reference/glossary/#term-cursor
 
-- BaseUrl : Required. API base Url (Type: String)
+- **BaseUrl** : Required. API base Url (Type: String)
 
-- DestinationFolder : Required. Destination folder where the csv is generated. This folder must exist in your project. (Type: String)
+- **DestinationFolder** : Required. Destination folder where the csv is generated. This folder must exist in your project. (Type: String)
 
 ### Example
+
 ```js
 
 const csv = require(‘lushan-export-to-csv’);
@@ -55,4 +72,3 @@ let cursor = await people.find(queryFilters, headers).cursor()
 csv.exportCsv('My-Company', headers, cursor, baseUrl, 'batches')
 
 ```
-

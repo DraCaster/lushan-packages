@@ -1,3 +1,7 @@
+/**
+ * 2020 - Github: DraCaster 
+ * Lujan Rojas - lujanrojas.informatica@gmail.com
+ */
 import path from 'path'
 import fs from 'fs'
 
