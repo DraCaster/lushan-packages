@@ -9,7 +9,7 @@ You can export records stored in the Mongo DB, to a CSV file.
 
 ```js
 
-npm i lushan-export-to-csv
+npm install @dracaster/lushan-export-to-csv@1.0.0
 
 ```
 
