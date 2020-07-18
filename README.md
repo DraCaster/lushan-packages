@@ -1,3 +1,7 @@
+[![Contributors][contributors-shield]][contributors-url]
+
+[![Stargazers][stars-shield]][stars-url]
+
 # lushan-export-to-csv
 
 You can export records stored in the Mongo DB, to a CSV file.
@@ -72,3 +76,11 @@ let cursor = await people.find(queryFilters, headers).cursor()
 csv.exportCsv('My-Company', headers, cursor, baseUrl, 'batches')
 
 ```
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[stars-shield]: https://img.shields.io/github/stars/dracaster/lushan-export-to-csv.svg?style=flat-square
+[stars-url]: https://github.com/DraCaster/lushan-export-to-csv/stargazers
+[contributors-shield]: https://img.shields.io/github/contributors/dracaster/lushan-export-to-csv.svg?style=flat-square
+[contributors-url]: https://github.com/dracaster/lushan-export-to-csv/graphs/contributors
