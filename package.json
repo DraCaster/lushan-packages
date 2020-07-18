@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/DraCaster/lushan-export-to-csv/issues"
   },
-  "homepage": "https://github.com/DraCaster/lushan-export-to-csv#readme"
+  "homepage": "https://github.com/DraCaster/lushan-export-to-csv#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
