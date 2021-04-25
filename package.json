@@ -1,5 +1,5 @@
 {
-  "name": "lushan-export-to-csv",
+  "name": "lushan-packages",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DraCaster/lushan-export-to-csv.git"
+    "url": "git+https://github.com/DraCaster/lushan-packages.git"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,10 @@
     "url": "https://github.com/DraCaster/lushan-export-to-csv/issues"
   },
   "homepage": "https://github.com/DraCaster/lushan-export-to-csv#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }

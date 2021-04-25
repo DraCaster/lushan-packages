@@ -1,6 +1,15 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
 
+# lushan-packages
+
+Set of packages to make development easier :)
+
+# Content:
+
+- lushan-export-to-csv
+- lushan-random-string
+
 # lushan-export-to-csv
 
 You can export records stored in the Mongo DB, to a CSV file.
